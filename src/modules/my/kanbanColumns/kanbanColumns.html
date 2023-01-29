@@ -1,0 +1,31 @@
+<template>
+    <div class="">
+        <template if:true={hasColumns}>
+            <div class="slds-clearfix slds-m-horizontal_x-small">
+                <template for:each={columns} for:item="column">
+                    <div class="slds-float_left slds-m-top_medium slds-m-horizontal_xxx-small overflow-div slds-p-around_none slds-box" key={column.idx}>
+                        <div class="container slds-m-top_x-small slds-border_bottom">
+                            <h3>{column.name}</h3>
+                        </div>
+                        <div class="slds-m-top_x-small box">
+
+                            <template for:each={column.items} for:item="item">
+                                <div 
+                                    key={item.idx} 
+                                    draggable="true" >
+                                    
+                                    <my-notification-card 
+                                        bg-color={item.color} 
+                                        body-content={item.body} 
+                                        header-label={item.header} ></my-notification-card>
+                                        
+                                </div>
+                            </template>
+
+                        </div>
+                    </div>
+                </template>
+            </div>
+        </template>
+    </div>
+</template>

@@ -1,0 +1,37 @@
+<template>
+    <div class="slds-m-around_small">
+        <div class="slds-form-element">
+            <label class="slds-form-element__label slds-text-heading_medium" for="txtUserName">
+                <abbr class="slds-required" title="Obrigatório">* </abbr>Usuário</label>
+            <div class="slds-form-element__control">
+                <input 
+                    type="text" 
+                    id="txtUserName" 
+                    value={userName} 
+                    onchange={handleUserChange} 
+                    required 
+                    class="slds-textarea  width-adjust"></input>
+            </div>
+        </div>
+        <div class="slds-form-element">
+            <label class="slds-form-element__label slds-text-heading_medium" for="txtUserPass">
+                <abbr class="slds-required" title="Obrigatório">* </abbr>Senha</label>
+            <div class="slds-form-element__control">
+                <input 
+                    type="password" 
+                    id="txtUserPass" 
+                    value={userPass} 
+                    onchange={handlePassChange} 
+                    required 
+                    class="slds-textarea width-adjust"></input>
+            </div>
+        </div>
+        <div class="slds-form-element">
+            <button 
+                class="slds-button slds-button_outline-brand width-adjust slds-m-top_large btn-fix" 
+                onclick={handleLogin} 
+                name="btnEntrar" 
+                label="Entrar">Entrar</button>
+        </div>
+    </div>
+</template>

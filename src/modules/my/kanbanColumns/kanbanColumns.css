@@ -1,0 +1,33 @@
+.container {
+    display: block;
+    min-width: 150px;
+}
+
+.box {
+    min-height: 500px;
+    min-width: 254px;
+    padding: 0;
+}
+
+.overflow-div {
+    border-radius: 5px;
+    background-color: lightgray;
+}
+
+.display-inline {
+    display: inline-block !important;
+    overflow-x: scroll !important;
+}
+
+.dragable-item {
+    color: black;
+    border: 1px dotted rgb(0, 0, 0, 0.0);
+    border-radius: 5px;
+    cursor: move;
+}
+
+.dragable-item:hover {
+    border: 1px dotted rgb(0, 0, 0, 0.5);
+    border-radius: 5px;
+    cursor: move;
+}

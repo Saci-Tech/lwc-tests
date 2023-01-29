@@ -1,0 +1,33 @@
+<template>
+    <div>
+        <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_col-bordered">
+            <template if:true={hasCaption}>
+                <caption class="slds-text-heading_medium slds-m-bottom_xx-small">{caption}</caption>
+            </template>
+            <template if:true={hasHeadings}>
+                <thead>
+                    <tr class="slds-line-height_reset">
+                        <template for:each={headingList} for:item="nomeColuna">
+                            <th key={nomeColuna} scope="col">
+                                <div class="slds-truncate" title={nomeColuna}>{nomeColuna}</div>
+                            </th>
+                        </template>
+                    </tr>
+                </thead>
+            </template>
+            <tbody>
+                <template if:true={hasData}>
+                    <template for:each={valuesToShow} for:item="valueToShow">
+                        <tr key={valueToShow.number} class="slds-hint-parent">
+                            <template for:each={valueToShow} for:item="showing">
+                                <td key={showing}>
+                                    <div class="slds-truncate" title={showing}>{showing}</div>
+                                </td>
+                            </template>
+                        </tr>
+                    </template>
+                </template>
+            </tbody>
+        </table>
+    </div>
+</template>

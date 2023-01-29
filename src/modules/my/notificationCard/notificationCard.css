@@ -1,0 +1,38 @@
+.limited-size {
+    max-width: 250px;
+    max-height: 100px;
+    min-width: 250px;
+    min-height: 100px;
+}
+
+.bg-red {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.bg-yellow {
+    background-color: yellow;
+}
+
+.bg-blue {
+    background-color: blue;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-gray {
+    background-color: gray;
+}
+
+.bg-green {
+    background-color: green;
+}
+
+.bg-orange {
+    background-color: orange;
+}
+
+.bg-violet {
+    background-color: violet;
+}

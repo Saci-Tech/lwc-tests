@@ -36,3 +36,12 @@ img {
 .greeting {
     height: 75px;
 }
+
+li {
+    list-style: none;
+}
+
+.display-inline {
+    display: inline-block !important;
+    overflow-x: scroll !important;
+}
